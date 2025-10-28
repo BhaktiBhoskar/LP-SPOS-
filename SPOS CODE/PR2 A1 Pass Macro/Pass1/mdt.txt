@@ -1,0 +1,10 @@
+MOVER	(P,null(P,null
+ADD	(P,null='1'	
+MOVER	(P,null(P,null
+ADD	(P,null='5'	
+MEND
+MOVER	(P,null(P,null
+MOVER	(P,null(P,null
+ADD	(P,null='15'	
+ADD	(P,null='10'	
+MEND
