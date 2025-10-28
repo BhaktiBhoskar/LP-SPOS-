@@ -20,17 +20,17 @@ public class PassTwoMacroProcessor {
     public static void main(String[] args) {
         // ---------- MACRO DEFINITION TABLE (MDT) ----------
         List<MDTEntry> MDT = new ArrayList<>();
-        MDT.add(new MDTEntry("MOVER AREG, &ARG1"));
-        MDT.add(new MDTEntry("ADD AREG, &ARG2"));
-        MDT.add(new MDTEntry("MEND"));
-        MDT.add(new MDTEntry("MOVER AREG, &ARG3"));
-        MDT.add(new MDTEntry("SUB AREG, &ARG4"));
-        MDT.add(new MDTEntry("MEND"));
+        MDT.add(new MDTEntry("MOVER AREG, &ARG1")); // index 0
+        MDT.add(new MDTEntry("ADD AREG, &ARG2"));   // index 1
+        MDT.add(new MDTEntry("MEND"));              // index 2
+        MDT.add(new MDTEntry("MOVER AREG, &ARG3")); // index 3
+        MDT.add(new MDTEntry("SUB AREG, &ARG4"));   // index 4
+        MDT.add(new MDTEntry("MEND"));              // index 5
 
         // ---------- MACRO NAME TABLE (MNT) ----------
         List<MNTEntry> MNT = new ArrayList<>();
-        MNT.add(new MNTEntry("INCR", 0));
-        MNT.add(new MNTEntry("DECR", 3));
+        MNT.add(new MNTEntry("INCR", 0));  // INCR macro starts at MDT index 0
+        MNT.add(new MNTEntry("DECR", 3));  // DECR macro starts at MDT index 3
 
         // ---------- INPUT CODE (Intermediate code) ----------
         String[] input = {
